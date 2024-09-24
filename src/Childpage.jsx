@@ -55,7 +55,7 @@ const CategoriesDisplay = () => {
   const handleSaveEdit = async (updatedCategory) => {
     try {
       // Send the updated category data to the API (assumed PUT request for update)
-      const response = await fetch(`http://localhost:5000/api/categories/${updatedCategory.slug}`, {
+      const response = await fetch(`http://3.26.215.90:5000/api/categories/${updatedCategory.slug}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
