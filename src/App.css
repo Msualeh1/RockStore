@@ -1,0 +1,275 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  
+  text-align: center;
+}
+
+.hovcl:hover{
+  box-shadow: 5px 5px 5px rgb(0, 183, 197);;
+}
+
+.hero-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden; /* Ensures content is contained */
+/* Adjusted gradient for a more subtle fade effect */
+-webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 95%);
+mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+}
+.card-title.h5{
+  color: black;
+}
+
+.hero-image {
+  width: 100%;
+  height: 500px; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the entire container */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content */
+  text-align: center;
+  z-index: 1; /* Ensure content is above the image */
+}
+
+.hero-button {
+  background-color: red; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: black; /* Darker shade on hover */
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  width: 500px; /* Adjust width as needed */
+}
+
+.search-button {
+  padding: 10px 15px;
+ 
+  border: none;
+  border-radius: 0.5rem;
+  background-color: red; /* Blue color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: black; /* Darker blue on hover */
+}
+
+.search-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.card-section.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  width: 15rem;
+  padding:0rem !important;
+  margin-top:1rem;
+  border-radius: 2rem !important;
+}
+/* Custom CSS to match the card style from the image */
+
+.card-section {
+  padding: 20px;
+  background-color: white;
+  
+  
+}
+.exper{
+  background-color: rgb(12, 35, 61);
+  opacity:0.97;
+  display: flex;
+  padding-bottom: 2rem;
+  
+}
+
+
+
+.card-section.container{
+  
+ display: block;
+ position:relative;
+  margin-top:-1rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  background-color: #202125;
+  
+ 
+}
+
+.custom-card.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9rem;
+  height: 8.5rem;
+  margin-top: 2rem;
+  background-color: #F9F6EE;
+  
+  padding: 20px;
+  text-align: center;
+ 
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 1); /* Adds a subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.5s ease; /* Hover effect */
+}
+
+.custom-card:hover {
+  transform: translateY(-6px); /* Lift card on hover */
+  box-shadow: 6px 6px 0px rgb(97, 108, 108);
+}
+
+.card-image {
+  max-width: 60px; /* Adjust the size of the image/icon */
+  margin-bottom: 20px;
+  margin-bottom: 0rem;
+  padding-top: 1rem;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #562dea; /* Similar color to the title in your image */
+}
+
+.card-text {
+  font-size: 14px;
+  color: #6c757d; /* Lighter text color */
+}
+.category-text{
+ 
+  display: flex;
+  align-items: center;
+}
+.cat-icon{
+  height: 1.5rem;
+}
+.banner{
+ 
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+
+/* Navbar Background and Style */
+.navbar-custom {
+  background-color: #202125; /* dark background */
+  padding: 10px 0;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Navbar Link Styles */
+.navbar-link {
+  color: white;
+  margin: 0 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover, .navbar-link.active {
+  color: white;  /* cyan hover and active color */
+  background-color:#00b7c5 ;
+  border-radius: 1rem;
+}
+
+/* Centering the Navbar Links */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact Button Styles */
+.contact-btn {
+  background-color: #00b7c5; /* cyan color */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 1rem;
+}
+
+.contact-btn:hover {
+  background-color: #019aa3; /* darker cyan on hover */
+}
+.navbar-logo:hover{
+  color: white;
+}
+
+
