@@ -17,7 +17,7 @@ const SearchBar = () => {
 
         try {
             // Correct URL for fetching search results
-            const response = await fetch(`http://localhost:5000/search?query=${encodeURIComponent(searchTerm)}`);
+            const response = await fetch(`http://3.26.215.90:5000/search?query=${encodeURIComponent(searchTerm)}`);
             if (!response.ok) {
                 throw new Error(`Error: ${response.statusText}`);
             }

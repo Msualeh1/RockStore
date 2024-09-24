@@ -15,7 +15,7 @@ const App = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/categories');
+                const response = await fetch('http://3.26.215.90:5000/api/categories');
                 if (!response.ok) {
                     throw new Error(`Error: ${response.status}`);
                 }

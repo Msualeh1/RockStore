@@ -20,7 +20,7 @@ const CategoriesDisplay = () => {
     const fetchCategories = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`http://localhost:5000/api/categories/${slug}`);
+        const response = await fetch(`http://3.26.215.90:5000/api/categories/${slug}`);
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);
         }
