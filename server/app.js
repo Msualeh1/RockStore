@@ -1,5 +1,4 @@
-require('dotenv').config({ path: './config.env' })
-console.log('Loaded port:', process.env.PORT);
+
 const express = require('express');
 const connectMongo = require('./utils/connect'); // Ensure this connects to MongoDB
 const cors = require('cors');
@@ -7,7 +6,7 @@ const Category = require('./utils/model'); // Adjust the path to where your mode
 
 const app = express();
 
-
+const PORT=5000;
 // Enable CORS for React frontend running on port 5173
 const corsOptions = {
   origin: 'http://localhost:5173',
@@ -132,7 +131,7 @@ app.get('/search', async (req, res) => {
 });
 
 // Start the server
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
   connectMongo(); // Ensure you're connecting to MongoDB
   console.log(`Server is running on port ${process.env.PORT}...`); // Use process.env.PORT here
 });
