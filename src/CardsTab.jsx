@@ -52,7 +52,7 @@ const App = () => {
                 <Row>
                     {/* Text Section */}
                     <Col xs={12} md={6} className="mb-4" style={{ paddingRight: '5rem' }}>
-                        <p style={{ fontSize: '25px', lineHeight: '2', whiteSpace: 'pre-wrap', color: "white", marginTop: '3rem', marginLeft: "1rem" }}>
+                        <p style={{ fontSize: '20px', lineHeight: '2', whiteSpace: 'pre-wrap', color: "white", marginTop: '3rem', marginLeft: "1rem" }}>
                             Discover an extensive range {'\n'}of premium car spare parts{'\n'}
                             delivered right to your doorstep {'\n'}fast, easy, and hassle-free!
                         </p>
